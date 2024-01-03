@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service HelloWorld {
+  rpc Greeting (RequestPayload) returns (ResponsePayload) {};
+}
+
+message RequestPayload {
+  string name = 1;
+}
+
+message ResponsePayload {
+  string message = 1;
+}
